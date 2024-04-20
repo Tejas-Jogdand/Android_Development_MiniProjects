@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CFEEF3"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginStart="10dp"
+        android:gravity="center"
+        android:text="Project Database"
+        android:textColor="#A863E4"
+        android:textSize="34sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/emp_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:ems="10"
+        android:hint="Enter ID (during Update or Delete)"
+        android:inputType="text"
+        android:minHeight="55dp"
+        android:textColor="#AC40AC"
+        android:textColorHint="#888888" />
+
+    <EditText
+        android:id="@+id/emp_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:ems="10"
+        android:hint="Enter Name (during Insert or Update)"
+        android:inputType="text"
+        android:minHeight="55dp"
+        android:textColor="#AC40AC"
+        android:textColorHint="#888888" />
+
+    <EditText
+        android:id="@+id/emp_dept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:ems="10"
+        android:hint="Enter Department (during Insert or Update)"
+        android:inputType="text"
+        android:minHeight="55dp"
+        android:textColor="#AC40AC"
+        android:textColorHint="#888888"/>
+
+    <EditText
+        android:id="@+id/emp_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:hint="Enter City (during Insert or Update)"
+        android:inputType="text"
+        android:minHeight="55dp"
+        android:textColor="#AC40AC"
+        android:textColorHint="#888888"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/insert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:width="150dp"
+                android:onClick="btnInsertPressed"
+                android:text="INSERT" />
+
+            <Button
+                android:id="@+id/fetch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="150dp"
+                android:onClick="btnFetchPressed"
+                android:text="FETCH" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:width="150dp"
+                android:onClick="btnUpdatePressed"
+                android:text="UPDATE" />
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="150dp"
+                android:onClick="btnDeletePressed"
+                android:text="DELETE" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

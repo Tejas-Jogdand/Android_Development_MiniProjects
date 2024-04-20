@@ -1,0 +1,24 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id delete
+id fetch
+id insert
+id main
+id password
+id title
+id update
+id user_id
+id username
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+string Dashline
+string app_name
+style Base.Theme.CRUDOperations
+style Theme.CRUDOperations
+xml backup_rules
+xml data_extraction_rules
